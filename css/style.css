@@ -154,15 +154,7 @@ a, a:hover, a:active {
   height: 80%;
   background-color: grey;
 }
-.item:nth-child(1) {
-  background: darkred;
-}
-.item:nth-child(2) {
-  background: red;
-}
-.item:nth-child(3) {
-  background: orange;
-}
+
 .caption {
 position: absolute;
   
