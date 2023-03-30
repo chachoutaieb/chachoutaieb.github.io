@@ -57,6 +57,8 @@ for (var i = 0; i < btns.length; i++) {
     var current = document.getElementsByClassName("active2");
     current[0].className = current[0].className.replace(" active2", "");
     this.className += " active2";
+    $("img").hide();
+    $("." + $(this).val()).show();
   });
 }
 
