@@ -282,18 +282,27 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
   <button class="btn1" onclick="filterSelection('resolutionfaster')"> Resolution</button>
   <button class="btn1" onclick="filterSelection('classfaster')"> Class</button>
  </div>
+ 
  <div class = slow>
  <p class = "txt1"><b>Slower preset</b></br>  </p>
   <button class="btn1" onclick="filterSelection('datsaset')"> Dataset</button>
   <button class="btn1" onclick="filterSelection('resoslution')"> Resolution</button>
   <button class="btn1" onclick="filterSelection('clsass')"> Class</button>
   </div>
+  
+  <div class = all>
+   <p class = "txt1"><b>All preset</b></br>  </p>
+  <button class="btn1" onclick="filterSelection('dstall')"> Dataset</button>
+  <button class="btn1" onclick="filterSelection('resltnall')"> Resolution</button>
+  <button class="btn1" onclick="filterSelection('clsall')"> Class</button>
+ </div>
+ 
 </div>    
 
     <div class="filterDiv datasetfaster show">  
   		 <p class = "txt">Show results by :  <select class = "selcss">
   		 <option class = "selcss2"  value="" > --Please choose an option-- </option>
-	    	<option class = "selcss2" value="dataset_faster" >Dataset</option>
+	    	<option class = "selcss2" value="dataset_faster" >All JVET CTC dataset</option>
 		<option class = "selcss2" value="ArenaOfValor_faster" /> ArenaOfValor<br />
 	    	<option class = "selcss2" value="BQMall_faster" /> BQMall<br />
 	    	<option class = "selcss2" value="BQSquare_faster" /> BQSquare<br />
@@ -335,7 +344,7 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
   <div class="filterDiv classfaster">
   		<p class = "txt">Show results by :  <select  class = "selcss">
   		<option value="" >--Please choose an option--</option>
-	    	<option value="class" >All classes</option>
+	    	<option value="class_faster" >All classes</option>
 		<option value="A1_faster" /> Class A1<br />
 	    	<option value="A2_faster" /> Class A2<br />
 	    	<option value="B_faster" /> Class B<br />
@@ -348,7 +357,7 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
   <div class="filterDiv datsaset">  
   		 <p class = "txt">Show results by :  <select class = "selcss">
   		 <option value="" > --Please choose an option-- </option>
-	    	<option  value="dataset" >Dataset</option>
+	    	<option  value="dataset" >All JVET CTC dataset</option>
 		<option value="ArenaOfValor" /> ArenaOfValor<br />
 	    	<option  value="BQMall" /> BQMall<br />
 	    	<option  value="BQSquare" /> BQSquare<br />
@@ -400,11 +409,68 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 	    	<option value="F" /> Class F<br />	    	
 		</select></p></div>
 		
+		
+	<div class="filterDiv dstall">  
+  		 <p class = "txt">Show results by :  <select class = "selcss">
+  		 <option value="" > --Please choose an option-- </option>
+	    	<option  value="dataset_all" >All JVET CTC dataset</option>
+		<option value="ArenaOfValor_all" /> ArenaOfValor<br />
+	    	<option  value="BQMall_all" /> BQMall<br />
+	    	<option  value="BQSquare_all" /> BQSquare<br />
+	    	<option  value="BQTerrace_all" /> BQTerrace<br />
+	    	<option  value="BasketballDrillText_all" /> BasketballDrillText<br />
+	    	<option  value="BasketballDrill_all" /> BasketballDrill<br />
+	    	<option  value="BasketballDrive_all" /> BasketballDrive<br />
+	    	<option  value="BasketballPass_all" /> BasketballPass<br />
+	    	<option  value="BlowingBubbles_all" /> BlowingBubbles<br />
+	    	<option value="Cactus_all" /> Cactus<br />
+	    	<option  value="Campfire_all" /> Campfire<br />
+	    	<option  value="CatRobot_all" /> CatRobot<br />
+	    	<option  value="DaylightRoad2_all" /> DaylightRoad2<br />
+	    	<option  value="FoodMarket4_all" /> FoodMarket4<br />
+	    	<option value="FourPeople_all" /> FourPeople<br />
+	    	<option value="KristenAndSara_all" /> KristenAndSara<br />
+		<option value="Johnny_all" /> Johnny<br />
+	    	<option  value="MarketPlace_all" /> MarketPlace<br />
+	    	<option  value="ParkRunning3_all" /> ParkRunning3<br />
+	    	<option  value="PartyScene_all" /> PartyScene<br />
+	    	<option  value="RaceHorses_all" /> RaceHorses<br />
+	    	<option value="RaceHorses_480_all" /> RaceHorses_480<br />
+	    	<option  value="RitualDance_all" /> RitualDance<br />
+	    	<option  value="SlideEditing_all" /> SlideEditing<br />
+	    	<option value="SlideShow_all" /> SlideShow<br />
+	    	<option  value="RaceHorses_480_all" /> RaceHorses_480<br />
+	    	<option  value="Tango2_all" /> Tango2<br />
+		</select></p></div>
+  <div class="filterDiv resltnall"> 
+  		<p class = "txt">Show results by :  <select  class = "selcss">
+  		<option value="" >--Please choose an option--</option>
+		<option value="416x240_all" /> 416x240<br />
+	    	<option value="832x480_all" /> 832x480<br />
+	    	<option value="1280x720_all" /> 1280x720<br />
+	    	<option value="1920x1080_all" /> 1920x1080<br />
+	    	<option value="3840x2160_all" /> 3840x2160<br />
+		</select></p></div>
+  <div class="filterDiv clsall">
+  		<p class = "txt">Show results by :  <select  class = "selcss">
+  		<option value="" >--Please choose an option--</option>
+		<option value="A1_all" /> Class A1<br />
+	    	<option value="A2_all" /> Class A2<br />
+	    	<option value="B_all" /> Class B<br />
+	    	<option value="C_all" /> Class C<br />
+	    	<option value="D_all" /> Class D<br />
+	    	<option value="E_all" /> Class E<br />
+	    	<option value="F_all" /> Class F<br />	    	
+		</select></p></div>
+		
 	
 </div>
 
 
 <div class="imgres">
+
+
+
 <img src="img/results/slower/Bar_A1_slow.jpg" class="A1 imgs"  />
 <img src="img/results/slower/Bar_A2_slow.jpg" class="A2 imgs"  />
 <img src="img/results/slower/Bar_B_slow.jpg" class="B imgs"  />
@@ -417,18 +483,18 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 <img src="img/results/slower/Bar_1280x720_slow.jpg" class="1280x720 imgs"  />
 <img src="img/results/slower/Bar_1920x1080_slow.jpg" class="1920x1080 imgs"  />
 <img src="img/results/slower/Bar_3840x2160_slow.jpg" class="3840x2160 imgs"  />
-<img src="img/results/slower/line_A1_time_slow.jpg" class="A1 imgs"  />
-<img src="img/results/slower/line_A2_time_slow.jpg" class="A2 imgs"  />
-<img src="img/results/slower/line_B_time_slow.jpg" class="B imgs"  />
-<img src="img/results/slower/line_C_time_slow.jpg" class="C imgs"  />
-<img src="img/results/slower/line_D_time_slow.jpg" class="D imgs"  />
-<img src="img/results/slower/line_E_time_slow.jpg" class="E imgs"  />
-<img src="img/results/slower/line_F_time_slow.jpg" class="F imgs"  />
-<img src="img/results/slower/line_416x240_time_slow.jpg" class="416x240 imgs"  />
-<img src="img/results/slower/line_832x480_time_slow.jpg" class="832x480 imgs"  />
-<img src="img/results/slower/line_1280x720_time_slow.jpg" class="1280x720 imgs"  />
-<img src="img/results/slower/line_1920x1080_time_slow.jpg" class="1920x1080 imgs"  />
-<img src="img/results/slower/line_3840x2160_time_slow.jpg" class="3840x2160 imgs"  />
+<img src="img/results/slower/line_A1_Encoding time (s)_slow.jpg" class="A1 imgs"  />
+<img src="img/results/slower/line_A2_Encoding time (s)_slow.jpg" class="A2 imgs"  />
+<img src="img/results/slower/line_B_Encoding time (s)_slow.jpg" class="B imgs"  />
+<img src="img/results/slower/line_C_Encoding time (s)_slow.jpg" class="C imgs"  />
+<img src="img/results/slower/line_D_Encoding time (s)_slow.jpg" class="D imgs"  />
+<img src="img/results/slower/line_E_Encoding time (s)_slow.jpg" class="E imgs"  />
+<img src="img/results/slower/line_F_Encoding time (s)_slow.jpg" class="F imgs"  />
+<img src="img/results/slower/line_416x240_Encoding time (s)_slow.jpg" class="416x240 imgs"  />
+<img src="img/results/slower/line_832x480_Encoding time (s)_slow.jpg" class="832x480 imgs"  />
+<img src="img/results/slower/line_1280x720_Encoding time (s)_slow.jpg" class="1280x720 imgs"  />
+<img src="img/results/slower/line_1920x1080_Encoding time (s)_slow.jpg" class="1920x1080 imgs"  />
+<img src="img/results/slower/line_3840x2160_Encoding time (s)_slow.jpg" class="3840x2160 imgs"  />
 <img src="img/results/slower/line_white_slow.jpg" class="A1 imgs"  />
 <img src="img/results/slower/line_white_slow.jpg" class="A2 imgs"  />
 <img src="img/results/slower/line_white_slow.jpg" class="B imgs"  />
@@ -511,33 +577,33 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 <img src="img/results/slower/bar_Campfire_slow.jpg" class="Campfire imgs"  />
 <img src="img/results/slower/Bar_dataset_slow.jpg" class="dataset imgs"  />
 <img src="img/results/slower/bar_cpu_memory_time_slow.jpg" class="dataset imgs"  />
-<img src="img/results/slower/line_ArenaOfValor_time_slow.jpg" class="ArenaOfValor imgs"  />
-<img src="img/results/slower/line_BQMall_time_slow.jpg" class="BQMall imgs"  />
-<img src="img/results/slower/line_BQSquare_time_slow.jpg" class="BQSquare imgs"  />
-<img src="img/results/slower/line_BQTerrace_time_slow.jpg" class="BQTerrace imgs"  />
-<img src="img/results/slower/line_BasketballDrillText_time_slow.jpg" class="BasketballDrillText imgs"  />
-<img src="img/results/slower/line_BasketballDrill_time_slow.jpg" class="BasketballDrill imgs"  />
-<img src="img/results/slower/line_BasketballDrive_time_slow.jpg" class="BasketballDrive imgs"  />
-<img src="img/results/slower/line_BasketballPass_time_slow.jpg" class="BasketballPass imgs"  />
-<img src="img/results/slower/line_BlowingBubbles_time_slow.jpg" class="BlowingBubbles imgs"  />
-<img src="img/results/slower/line_Cactus_time_slow.jpg" class="Cactus imgs"  />
-<img src="img/results/slower/line_Campfire_time_slow.jpg" class="Campfire imgs"  />
-<img src="img/results/slower/line_CatRobot_time_slow.jpg" class="CatRobot imgs"  />
-<img src="img/results/slower/line_DaylightRoad2_time_slow.jpg" class="DaylightRoad2 imgs"  />
-<img src="img/results/slower/line_FoodMarket4_time_slow.jpg" class="FoodMarket4 imgs"  />
-<img src="img/results/slower/line_FourPeople_time_slow.jpg" class="FourPeople imgs"  />
-<img src="img/results/slower/line_Johnny_time_slow.jpg" class="Johnny imgs"  />
-<img src="img/results/slower/line_KristenAndSara_time_slow.jpg" class="KristenAndSara imgs"  />
-<img src="img/results/slower/line_MarketPlace_time_slow.jpg" class="MarketPlace imgs"  />
-<img src="img/results/slower/line_ParkRunning3_time_slow.jpg" class="ParkRunning3 imgs"  />
-<img src="img/results/slower/line_PartyScene_time_slow.jpg" class="PartyScene imgs"  />
-<img src="img/results/slower/line_RaceHorses_time_slow.jpg" class="RaceHorses imgs"  />
-<img src="img/results/slower/line_RaceHorses_480_time_slow.jpg" class="RaceHorses_480 imgs"  />
-<img src="img/results/slower/line_RitualDance_time_slow.jpg" class="RitualDance imgs"  />
-<img src="img/results/slower/line_SlideEditing_time_slow.jpg" class="SlideEditing imgs"  />
-<img src="img/results/slower/line_SlideShow_time_slow.jpg" class="SlideShow imgs"  />
-<img src="img/results/slower/line_Tango2_time_slow.jpg" class="Tango2 imgs"  />
-<img src="img/results/slower/line_dataset time_slow.jpg" class="dataset imgs"  />
+<img src="img/results/slower/line_ArenaOfValor_Encoding time (s)_slow.jpg" class="ArenaOfValor imgs"  />
+<img src="img/results/slower/line_BQMall_Encoding time (s)_slow.jpg" class="BQMall imgs"  />
+<img src="img/results/slower/line_BQSquare_Encoding time (s)_slow.jpg" class="BQSquare imgs"  />
+<img src="img/results/slower/line_BQTerrace_Encoding time (s)_slow.jpg" class="BQTerrace imgs"  />
+<img src="img/results/slower/line_BasketballDrillText_Encoding time (s)_slow.jpg" class="BasketballDrillText imgs"  />
+<img src="img/results/slower/line_BasketballDrill_Encoding time (s)_slow.jpg" class="BasketballDrill imgs"  />
+<img src="img/results/slower/line_BasketballDrive_Encoding time (s)_slow.jpg" class="BasketballDrive imgs"  />
+<img src="img/results/slower/line_BasketballPass_Encoding time (s)_slow.jpg" class="BasketballPass imgs"  />
+<img src="img/results/slower/line_BlowingBubbles_Encoding time (s)_slow.jpg" class="BlowingBubbles imgs"  />
+<img src="img/results/slower/line_Cactus_Encoding time (s)_slow.jpg" class="Cactus imgs"  />
+<img src="img/results/slower/line_Campfire_Encoding time (s)_slow.jpg" class="Campfire imgs"  />
+<img src="img/results/slower/line_CatRobot_Encoding time (s)_slow.jpg" class="CatRobot imgs"  />
+<img src="img/results/slower/line_DaylightRoad2_Encoding time (s)_slow.jpg" class="DaylightRoad2 imgs"  />
+<img src="img/results/slower/line_FoodMarket4_Encoding time (s)_slow.jpg" class="FoodMarket4 imgs"  />
+<img src="img/results/slower/line_FourPeople_Encoding time (s)_slow.jpg" class="FourPeople imgs"  />
+<img src="img/results/slower/line_Johnny_Encoding time (s)_slow.jpg" class="Johnny imgs"  />
+<img src="img/results/slower/line_KristenAndSara_Encoding time (s)_slow.jpg" class="KristenAndSara imgs"  />
+<img src="img/results/slower/line_MarketPlace_Encoding time (s)_slow.jpg" class="MarketPlace imgs"  />
+<img src="img/results/slower/line_ParkRunning3_Encoding time (s)_slow.jpg" class="ParkRunning3 imgs"  />
+<img src="img/results/slower/line_PartyScene_Encoding time (s)_slow.jpg" class="PartyScene imgs"  />
+<img src="img/results/slower/line_RaceHorses_Encoding time (s)_slow.jpg" class="RaceHorses imgs"  />
+<img src="img/results/slower/line_RaceHorses_480_Encoding time (s)_slow.jpg" class="RaceHorses_480 imgs"  />
+<img src="img/results/slower/line_RitualDance_Encoding time (s)_slow.jpg" class="RitualDance imgs"  />
+<img src="img/results/slower/line_SlideEditing_Encoding time (s)_slow.jpg" class="SlideEditing imgs"  />
+<img src="img/results/slower/line_SlideShow_Encoding time (s)_slow.jpg" class="SlideShow imgs"  />
+<img src="img/results/slower/line_Tango2_Encoding time (s)_slow.jpg" class="Tango2 imgs"  />
+<img src="img/results/slower/line_dataset Encoding time (s)_slow.jpg" class="dataset imgs"  />
 <img src="img/results/slower/line_white_slow.jpg" class="ArenaOfValor imgs"  />
 <img src="img/results/slower/line_white_slow.jpg" class="BQMall imgs"  />
 <img src="img/results/slower/line_white_slow.jpg" class="BQSquare imgs"  />
@@ -824,18 +890,18 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 <img src="img/results/faster/Bar_1280x720_faster.jpg" class="1280x720_faster imgs"  />
 <img src="img/results/faster/Bar_1920x1080_faster.jpg" class="1920x1080_faster imgs"  />
 <img src="img/results/faster/Bar_3840x2160_faster.jpg" class="3840x2160_faster imgs"  />
-<img src="img/results/faster/line_A1_time_faster.jpg" class="A1_faster imgs"  />
-<img src="img/results/faster/line_A2_time_faster.jpg" class="A2_faster imgs"  />
-<img src="img/results/faster/line_B_time_faster.jpg" class="B_faster imgs"  />
-<img src="img/results/faster/line_C_time_faster.jpg" class="C_faster imgs"  />
-<img src="img/results/faster/line_D_time_faster.jpg" class="D_faster imgs"  />
-<img src="img/results/faster/line_E_time_faster.jpg" class="E_faster imgs"  />
-<img src="img/results/faster/line_F_time_faster.jpg" class="F_faster imgs"  />
-<img src="img/results/faster/line_416x240_time_faster.jpg" class="416x240_faster imgs"  />
-<img src="img/results/faster/line_832x480_time_faster.jpg" class="832x480_faster imgs"  />
-<img src="img/results/faster/line_1280x720_time_faster.jpg" class="1280x720_faster imgs"  />
-<img src="img/results/faster/line_1920x1080_time_faster.jpg" class="1920x1080_faster imgs"  />
-<img src="img/results/faster/line_3840x2160_time_faster.jpg" class="3840x2160_faster imgs"  />
+<img src="img/results/faster/line_A1_Encoding time (s)_faster.jpg" class="A1_faster imgs"  />
+<img src="img/results/faster/line_A2_Encoding time (s)_faster.jpg" class="A2_faster imgs"  />
+<img src="img/results/faster/line_B_Encoding time (s)_faster.jpg" class="B_faster imgs"  />
+<img src="img/results/faster/line_C_Encoding time (s)_faster.jpg" class="C_faster imgs"  />
+<img src="img/results/faster/line_D_Encoding time (s)_faster.jpg" class="D_faster imgs"  />
+<img src="img/results/faster/line_E_Encoding time (s)_faster.jpg" class="E_faster imgs"  />
+<img src="img/results/faster/line_F_Encoding time (s)_faster.jpg" class="F_faster imgs"  />
+<img src="img/results/faster/line_416x240_Encoding time (s)_faster.jpg" class="416x240_faster imgs"  />
+<img src="img/results/faster/line_832x480_Encoding time (s)_faster.jpg" class="832x480_faster imgs"  />
+<img src="img/results/faster/line_1280x720_Encoding time (s)_faster.jpg" class="1280x720_faster imgs"  />
+<img src="img/results/faster/line_1920x1080_Encoding time (s)_faster.jpg" class="1920x1080_faster imgs"  />
+<img src="img/results/faster/line_3840x2160_Encoding time (s)_faster.jpg" class="3840x2160_faster imgs"  />
 <img src="img/results/faster/line_white_faster.jpg" class="A1_faster imgs"  />
 <img src="img/results/faster/line_white_faster.jpg" class="A2_faster imgs"  />
 <img src="img/results/faster/line_white_faster.jpg" class="B_faster imgs"  />
@@ -918,33 +984,33 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 <img src="img/results/faster/bar_Campfire_faster.jpg" class="Campfire_faster imgs"  />
 <img src="img/results/faster/Bar_dataset_faster.jpg" class="dataset_faster imgs"  />
 <img src="img/results/faster/bar_cpu_memory_time_faster.jpg" class="dataset_faster imgs"  />
-<img src="img/results/faster/line_ArenaOfValor_time_faster.jpg" class="ArenaOfValor_faster imgs"  />
-<img src="img/results/faster/line_BQMall_time_faster.jpg" class="BQMall_faster imgs"  />
-<img src="img/results/faster/line_BQSquare_time_faster.jpg" class="BQSquare_faster imgs"  />
-<img src="img/results/faster/line_BQTerrace_time_faster.jpg" class="BQTerrace_faster imgs"  />
-<img src="img/results/faster/line_BasketballDrillText_time_faster.jpg" class="BasketballDrillText_faster imgs"  />
-<img src="img/results/faster/line_BasketballDrill_time_faster.jpg" class="BasketballDrill_faster imgs"  />
-<img src="img/results/faster/line_BasketballDrive_time_faster.jpg" class="BasketballDrive_faster imgs"  />
-<img src="img/results/faster/line_BasketballPass_time_faster.jpg" class="BasketballPass_faster imgs"  />
-<img src="img/results/faster/line_BlowingBubbles_time_faster.jpg" class="BlowingBubbles_faster imgs"  />
-<img src="img/results/faster/line_Cactus_time_faster.jpg" class="Cactus_faster imgs"  />
-<img src="img/results/faster/line_Campfire_time_faster.jpg" class="Campfire_faster imgs"  />
-<img src="img/results/faster/line_CatRobot_time_faster.jpg" class="CatRobot_faster imgs"  />
-<img src="img/results/faster/line_DaylightRoad2_time_faster.jpg" class="DaylightRoad2_faster imgs"  />
-<img src="img/results/faster/line_FoodMarket4_time_faster.jpg" class="FoodMarket4_faster imgs"  />
-<img src="img/results/faster/line_FourPeople_time_faster.jpg" class="FourPeople_faster imgs"  />
-<img src="img/results/faster/line_Johnny_time_faster.jpg" class="Johnny_faster imgs"  />
-<img src="img/results/faster/line_KristenAndSara_time_faster.jpg" class="KristenAndSara_faster imgs"  />
-<img src="img/results/faster/line_MarketPlace_time_faster.jpg" class="MarketPlace_faster imgs"  />
-<img src="img/results/faster/line_ParkRunning3_time_faster.jpg" class="ParkRunning3_faster imgs"  />
-<img src="img/results/faster/line_PartyScene_time_faster.jpg" class="PartyScene_faster imgs"  />
-<img src="img/results/faster/line_RaceHorses_time_faster.jpg" class="RaceHorses_faster imgs"  />
-<img src="img/results/faster/line_RaceHorses_480_time_faster.jpg" class="RaceHorses_480_faster imgs"  />
-<img src="img/results/faster/line_RitualDance_time_faster.jpg" class="RitualDance_faster imgs"  />
-<img src="img/results/faster/line_SlideEditing_time_faster.jpg" class="SlideEditing_faster imgs"  />
-<img src="img/results/faster/line_SlideShow_time_faster.jpg" class="SlideShow_faster imgs"  />
-<img src="img/results/faster/line_Tango2_time_faster.jpg" class="Tango2_faster imgs"  />
-<img src="img/results/faster/line_dataset time_faster.jpg" class="dataset_faster imgs"  />
+<img src="img/results/faster/line_ArenaOfValor_Encoding time (s)_faster.jpg" class="ArenaOfValor_faster imgs"  />
+<img src="img/results/faster/line_BQMall_Encoding time (s)_faster.jpg" class="BQMall_faster imgs"  />
+<img src="img/results/faster/line_BQSquare_Encoding time (s)_faster.jpg" class="BQSquare_faster imgs"  />
+<img src="img/results/faster/line_BQTerrace_Encoding time (s)_faster.jpg" class="BQTerrace_faster imgs"  />
+<img src="img/results/faster/line_BasketballDrillText_Encoding time (s)_faster.jpg" class="BasketballDrillText_faster imgs"  />
+<img src="img/results/faster/line_BasketballDrill_Encoding time (s)_faster.jpg" class="BasketballDrill_faster imgs"  />
+<img src="img/results/faster/line_BasketballDrive_Encoding time (s)_faster.jpg" class="BasketballDrive_faster imgs"  />
+<img src="img/results/faster/line_BasketballPass_Encoding time (s)_faster.jpg" class="BasketballPass_faster imgs"  />
+<img src="img/results/faster/line_BlowingBubbles_Encoding time (s)_faster.jpg" class="BlowingBubbles_faster imgs"  />
+<img src="img/results/faster/line_Cactus_Encoding time (s)_faster.jpg" class="Cactus_faster imgs"  />
+<img src="img/results/faster/line_Campfire_Encoding time (s)_faster.jpg" class="Campfire_faster imgs"  />
+<img src="img/results/faster/line_CatRobot_Encoding time (s)_faster.jpg" class="CatRobot_faster imgs"  />
+<img src="img/results/faster/line_DaylightRoad2_Encoding time (s)_faster.jpg" class="DaylightRoad2_faster imgs"  />
+<img src="img/results/faster/line_FoodMarket4_Encoding time (s)_faster.jpg" class="FoodMarket4_faster imgs"  />
+<img src="img/results/faster/line_FourPeople_Encoding time (s)_faster.jpg" class="FourPeople_faster imgs"  />
+<img src="img/results/faster/line_Johnny_Encoding time (s)_faster.jpg" class="Johnny_faster imgs"  />
+<img src="img/results/faster/line_KristenAndSara_Encoding time (s)_faster.jpg" class="KristenAndSara_faster imgs"  />
+<img src="img/results/faster/line_MarketPlace_Encoding time (s)_faster.jpg" class="MarketPlace_faster imgs"  />
+<img src="img/results/faster/line_ParkRunning3_Encoding time (s)_faster.jpg" class="ParkRunning3_faster imgs"  />
+<img src="img/results/faster/line_PartyScene_Encoding time (s)_faster.jpg" class="PartyScene_faster imgs"  />
+<img src="img/results/faster/line_RaceHorses_Encoding time (s)_faster.jpg" class="RaceHorses_faster imgs"  />
+<img src="img/results/faster/line_RaceHorses_480_Encoding time (s)_faster.jpg" class="RaceHorses_480_faster imgs"  />
+<img src="img/results/faster/line_RitualDance_Encoding time (s)_faster.jpg" class="RitualDance_faster imgs"  />
+<img src="img/results/faster/line_SlideEditing_Encoding time (s)_faster.jpg" class="SlideEditing_faster imgs"  />
+<img src="img/results/faster/line_SlideShow_Encoding time (s)_faster.jpg" class="SlideShow_faster imgs"  />
+<img src="img/results/faster/line_Tango2_Encoding time (s)_faster.jpg" class="Tango2_faster imgs"  />
+<img src="img/results/faster/line_dataset Encoding time (s)_faster.jpg" class="dataset_faster imgs"  />
 <img src="img/results/faster/line_white_faster.jpg" class="ArenaOfValor_faster imgs"  />
 <img src="img/results/faster/line_white_faster.jpg" class="BQMall_faster imgs"  />
 <img src="img/results/faster/line_white_faster.jpg" class="BQSquare_faster imgs"  />
@@ -1206,6 +1272,368 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 <img src="img/results/Point_Campfire_BD rate(VMAF)_relative_Energy.jpg" class="Campfire_faster imgs"  />
 <img src="img/results/dataset_BD rate (SSIM)_relative_Energy.jpg" class="dataset_faster imgs"  />
 <img src="img/results/dataset_BD rate (VMAF)_relative_Energy.jpg" class="dataset_faster imgs"  />
+
+
+<!--all --all -- all preset -- all preset -- all preset -- all preset -- all preset -- all preset -- all preset --> 
+
+
+
+<img src="img/results/all/Bar_preset_energy_dataset.jpg" class="dataset_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_ArenaOfValor.jpg" class="ArenaOfValor_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_BQMall.jpg" class="BQMall_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_BQSquare.jpg" class="BQSquare_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_BQTerrace.jpg" class="BQTerrace_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_BasketballDrillText.jpg" class="BasketballDrillText_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_BasketballDrill.jpg" class="BasketballDrill_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_BasketballDrive.jpg" class="BasketballDrive_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_BasketballPass.jpg" class="BasketballPass_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_BlowingBubbles.jpg" class="BlowingBubbles_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_Cactus.jpg" class="Cactus_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_Campfire.jpg" class="Campfire_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_CatRobot.jpg" class="CatRobot_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_DaylightRoad2.jpg" class="DaylightRoad2_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_FoodMarket4.jpg" class="FoodMarket4_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_FourPeople.jpg" class="FourPeople_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_Johnny.jpg" class="Johnny_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_KristenAndSara.jpg" class="KristenAndSara_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_MarketPlace.jpg" class="MarketPlace_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_ParkRunning3.jpg" class="ParkRunning3_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_PartyScene.jpg" class="PartyScene_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_RaceHorses.jpg" class="RaceHorses_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_RaceHorses_480.jpg" class="RaceHorses_480_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_RitualDance.jpg" class="RitualDance_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_SlideEditing.jpg" class="SlideEditing_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_SlideShow.jpg" class="SlideShow_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_Tango2.jpg" class="Tango2_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_A1.jpg" class="A1_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_A2.jpg" class="A2_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_B.jpg" class="B_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_C.jpg" class="C_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_D.jpg" class="D_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_E.jpg" class="E_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_F.jpg" class="F_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_416x240.jpg" class="416x240_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_832x480.jpg" class="832x480_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_1280x720.jpg" class="1280x720_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_1920x1080.jpg" class="1920x1080_all imgs"  />
+<img src="img/results/all/Bar_preset_energy_3840x2160.jpg" class="3840x2160_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_dataset.jpg" class="dataset_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_ArenaOfValor.jpg" class="ArenaOfValor_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_BQMall.jpg" class="BQMall_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_BQSquare.jpg" class="BQSquare_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_BQTerrace.jpg" class="BQTerrace_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_BasketballDrillText.jpg" class="BasketballDrillText_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_BasketballDrill.jpg" class="BasketballDrill_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_BasketballDrive.jpg" class="BasketballDrive_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_BasketballPass.jpg" class="BasketballPass_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_BlowingBubbles.jpg" class="BlowingBubbles_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_Cactus.jpg" class="Cactus_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_Campfire.jpg" class="Campfire_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_CatRobot.jpg" class="CatRobot_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_DaylightRoad2.jpg" class="DaylightRoad2_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_FoodMarket4.jpg" class="FoodMarket4_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_FourPeople.jpg" class="FourPeople_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_Johnny.jpg" class="Johnny_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_KristenAndSara.jpg" class="KristenAndSara_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_MarketPlace.jpg" class="MarketPlace_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_ParkRunning3.jpg" class="ParkRunning3_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_PartyScene.jpg" class="PartyScene_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_RaceHorses.jpg" class="RaceHorses_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_RaceHorses_480.jpg" class="RaceHorses_480_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_RitualDance.jpg" class="RitualDance_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_SlideEditing.jpg" class="SlideEditing_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_SlideShow.jpg" class="SlideShow_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_Tango2.jpg" class="Tango2_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_A1.jpg" class="A1_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_A2.jpg" class="A2_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_B.jpg" class="B_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_C.jpg" class="C_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_D.jpg" class="D_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_E.jpg" class="E_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_F.jpg" class="F_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_416x240.jpg" class="416x240_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_832x480.jpg" class="832x480_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_1280x720.jpg" class="1280x720_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_1920x1080.jpg" class="1920x1080_all imgs"  />
+<img src="img/results/all/Bar_preset_co2_3840x2160.jpg" class="3840x2160_all imgs"  />
+<img src="img/results/all/Bar_preset_time_dataset.jpg" class="dataset_all imgs"  />
+<img src="img/results/all/Bar_preset_time_ArenaOfValor.jpg" class="ArenaOfValor_all imgs"  />
+<img src="img/results/all/Bar_preset_time_BQMall.jpg" class="BQMall_all imgs"  />
+<img src="img/results/all/Bar_preset_time_BQSquare.jpg" class="BQSquare_all imgs"  />
+<img src="img/results/all/Bar_preset_time_BQTerrace.jpg" class="BQTerrace_all imgs"  />
+<img src="img/results/all/Bar_preset_time_BasketballDrillText.jpg" class="BasketballDrillText_all imgs"  />
+<img src="img/results/all/Bar_preset_time_BasketballDrill.jpg" class="BasketballDrill_all imgs"  />
+<img src="img/results/all/Bar_preset_time_BasketballDrive.jpg" class="BasketballDrive_all imgs"  />
+<img src="img/results/all/Bar_preset_time_BasketballPass.jpg" class="BasketballPass_all imgs"  />
+<img src="img/results/all/Bar_preset_time_BlowingBubbles.jpg" class="BlowingBubbles_all imgs"  />
+<img src="img/results/all/Bar_preset_time_Cactus.jpg" class="Cactus_all imgs"  />
+<img src="img/results/all/Bar_preset_time_Campfire.jpg" class="Campfire_all imgs"  />
+<img src="img/results/all/Bar_preset_time_CatRobot.jpg" class="CatRobot_all imgs"  />
+<img src="img/results/all/Bar_preset_time_DaylightRoad2.jpg" class="DaylightRoad2_all imgs"  />
+<img src="img/results/all/Bar_preset_time_FoodMarket4.jpg" class="FoodMarket4_all imgs"  />
+<img src="img/results/all/Bar_preset_time_FourPeople.jpg" class="FourPeople_all imgs"  />
+<img src="img/results/all/Bar_preset_time_Johnny.jpg" class="Johnny_all imgs"  />
+<img src="img/results/all/Bar_preset_time_KristenAndSara.jpg" class="KristenAndSara_all imgs"  />
+<img src="img/results/all/Bar_preset_time_MarketPlace.jpg" class="MarketPlace_all imgs"  />
+<img src="img/results/all/Bar_preset_time_ParkRunning3.jpg" class="ParkRunning3_all imgs"  />
+<img src="img/results/all/Bar_preset_time_PartyScene.jpg" class="PartyScene_all imgs"  />
+<img src="img/results/all/Bar_preset_time_RaceHorses.jpg" class="RaceHorses_all imgs"  />
+<img src="img/results/all/Bar_preset_time_RaceHorses_480.jpg" class="RaceHorses_480_all imgs"  />
+<img src="img/results/all/Bar_preset_time_RitualDance.jpg" class="RitualDance_all imgs"  />
+<img src="img/results/all/Bar_preset_time_SlideEditing.jpg" class="SlideEditing_all imgs"  />
+<img src="img/results/all/Bar_preset_time_SlideShow.jpg" class="SlideShow_all imgs"  />
+<img src="img/results/all/Bar_preset_time_Tango2.jpg" class="Tango2_all imgs"  />
+<img src="img/results/all/Bar_preset_time_A1.jpg" class="A1_all imgs"  />
+<img src="img/results/all/Bar_preset_time_A2.jpg" class="A2_all imgs"  />
+<img src="img/results/all/Bar_preset_time_B.jpg" class="B_all imgs"  />
+<img src="img/results/all/Bar_preset_time_C.jpg" class="C_all imgs"  />
+<img src="img/results/all/Bar_preset_time_D.jpg" class="D_all imgs"  />
+<img src="img/results/all/Bar_preset_time_E.jpg" class="E_all imgs"  />
+<img src="img/results/all/Bar_preset_time_F.jpg" class="F_all imgs"  />
+<img src="img/results/all/Bar_preset_time_416x240.jpg" class="416x240_all imgs"  />
+<img src="img/results/all/Bar_preset_time_832x480.jpg" class="832x480_all imgs"  />
+<img src="img/results/all/Bar_preset_time_1280x720.jpg" class="1280x720_all imgs"  />
+<img src="img/results/all/Bar_preset_time_1920x1080.jpg" class="1920x1080_all imgs"  />
+<img src="img/results/all/Bar_preset_time_3840x2160.jpg" class="3840x2160_all imgs"  />
+
+<img src="img/results/all/line_preset_dataset PSNR.jpg" class="dataset_all imgs1"  />
+<img src="img/results/all/line_preset_ArenaOfValor_PSNR.jpg" class="ArenaOfValor_all imgs1"  />
+<img src="img/results/all/line_preset_BQMall_PSNR.jpg" class="BQMall_all imgs1"  />
+<img src="img/results/all/line_preset_BQSquare_PSNR.jpg" class="BQSquare_all imgs1"  />
+<img src="img/results/all/line_preset_BQTerrace_PSNR.jpg" class="BQTerrace_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrillText_PSNR.jpg" class="BasketballDrillText_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrill_PSNR.jpg" class="BasketballDrill_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrive_PSNR.jpg" class="BasketballDrive_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballPass_PSNR.jpg" class="BasketballPass_all imgs1"  />
+<img src="img/results/all/line_preset_BlowingBubbles_PSNR.jpg" class="BlowingBubbles_all imgs1"  />
+<img src="img/results/all/line_preset_Cactus_PSNR.jpg" class="Cactus_all imgs1"  />
+<img src="img/results/all/line_preset_Campfire_PSNR.jpg" class="Campfire_all imgs1"  />
+<img src="img/results/all/line_preset_CatRobot_PSNR.jpg" class="CatRobot_all imgs1"  />
+<img src="img/results/all/line_preset_DaylightRoad2_PSNR.jpg" class="DaylightRoad2_all imgs1"  />
+<img src="img/results/all/line_preset_FoodMarket4_PSNR.jpg" class="FoodMarket4_all imgs1"  />
+<img src="img/results/all/line_preset_FourPeople_PSNR.jpg" class="FourPeople_all imgs1"  />
+<img src="img/results/all/line_preset_Johnny_PSNR.jpg" class="Johnny_all imgs1"  />
+<img src="img/results/all/line_preset_KristenAndSara_PSNR.jpg" class="KristenAndSara_all imgs1"  />
+<img src="img/results/all/line_preset_MarketPlace_PSNR.jpg" class="MarketPlace_all imgs1"  />
+<img src="img/results/all/line_preset_ParkRunning3_PSNR.jpg" class="ParkRunning3_all imgs1"  />
+<img src="img/results/all/line_preset_PartyScene_PSNR.jpg" class="PartyScene_all imgs1"  />
+<img src="img/results/all/line_preset_RaceHorses_PSNR.jpg" class="RaceHorses_all imgs1"  />
+<img src="img/results/all/line_preset_RaceHorses_480_PSNR.jpg" class="RaceHorses_480_all imgs1"  />
+<img src="img/results/all/line_preset_RitualDance_PSNR.jpg" class="RitualDance_all imgs1"  />
+<img src="img/results/all/line_preset_SlideEditing_PSNR.jpg" class="SlideEditing_all imgs1"  />
+<img src="img/results/all/line_preset_SlideShow_PSNR.jpg" class="SlideShow_all imgs1"  />
+<img src="img/results/all/line_preset_Tango2_PSNR.jpg" class="Tango2_all imgs1"  />
+<img src="img/results/all/line_preset_A1_PSNR.jpg" class="A1_all imgs1"  />
+<img src="img/results/all/line_preset_A2_PSNR.jpg" class="A2_all imgs1"  />
+<img src="img/results/all/line_preset_B_PSNR.jpg" class="B_all imgs1"  />
+<img src="img/results/all/line_preset_C_PSNR.jpg" class="C_all imgs1"  />
+<img src="img/results/all/line_preset_D_PSNR.jpg" class="D_all imgs1"  />
+<img src="img/results/all/line_preset_E_PSNR.jpg" class="E_all imgs1"  />
+<img src="img/results/all/line_preset_F_PSNR.jpg" class="F_all imgs1"  />
+<img src="img/results/all/line_preset_416x240_PSNR.jpg" class="416x240_all imgs1"  />
+<img src="img/results/all/line_preset_832x480_PSNR.jpg" class="832x480_all imgs1"  />
+<img src="img/results/all/line_preset_1280x720_PSNR.jpg" class="1280x720_all imgs1"  />
+<img src="img/results/all/line_preset_1920x1080_PSNR.jpg" class="1920x1080_all imgs1"  />
+<img src="img/results/all/line_preset_3840x2160_PSNR.jpg" class="3840x2160_all imgs1"  />
+<img src="img/results/all/line_preset_dataset SSIM.jpg" class="dataset_all imgs1"  />
+<img src="img/results/all/line_preset_ArenaOfValor_SSIM.jpg" class="ArenaOfValor_all imgs1"  />
+<img src="img/results/all/line_preset_BQMall_SSIM.jpg" class="BQMall_all imgs1"  />
+<img src="img/results/all/line_preset_BQSquare_SSIM.jpg" class="BQSquare_all imgs1"  />
+<img src="img/results/all/line_preset_BQTerrace_SSIM.jpg" class="BQTerrace_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrillText_SSIM.jpg" class="BasketballDrillText_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrill_SSIM.jpg" class="BasketballDrill_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrive_SSIM.jpg" class="BasketballDrive_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballPass_SSIM.jpg" class="BasketballPass_all imgs1"  />
+<img src="img/results/all/line_preset_BlowingBubbles_SSIM.jpg" class="BlowingBubbles_all imgs1"  />
+<img src="img/results/all/line_preset_Cactus_SSIM.jpg" class="Cactus_all imgs1"  />
+<img src="img/results/all/line_preset_Campfire_SSIM.jpg" class="Campfire_all imgs1"  />
+<img src="img/results/all/line_preset_CatRobot_SSIM.jpg" class="CatRobot_all imgs1"  />
+<img src="img/results/all/line_preset_DaylightRoad2_SSIM.jpg" class="DaylightRoad2_all imgs1"  />
+<img src="img/results/all/line_preset_FoodMarket4_SSIM.jpg" class="FoodMarket4_all imgs1"  />
+<img src="img/results/all/line_preset_FourPeople_SSIM.jpg" class="FourPeople_all imgs1"  />
+<img src="img/results/all/line_preset_Johnny_SSIM.jpg" class="Johnny_all imgs1"  />
+<img src="img/results/all/line_preset_KristenAndSara_SSIM.jpg" class="KristenAndSara_all imgs1"  />
+<img src="img/results/all/line_preset_MarketPlace_SSIM.jpg" class="MarketPlace_all imgs1"  />
+<img src="img/results/all/line_preset_ParkRunning3_SSIM.jpg" class="ParkRunning3_all imgs1"  />
+<img src="img/results/all/line_preset_PartyScene_SSIM.jpg" class="PartyScene_all imgs1"  />
+<img src="img/results/all/line_preset_RaceHorses_SSIM.jpg" class="RaceHorses_all imgs1"  />
+<img src="img/results/all/line_preset_RaceHorses_480_SSIM.jpg" class="RaceHorses_480_all imgs1"  />
+<img src="img/results/all/line_preset_RitualDance_SSIM.jpg" class="RitualDance_all imgs1"  />
+<img src="img/results/all/line_preset_SlideEditing_SSIM.jpg" class="SlideEditing_all imgs1"  />
+<img src="img/results/all/line_preset_SlideShow_SSIM.jpg" class="SlideShow_all imgs1"  />
+<img src="img/results/all/line_preset_Tango2_SSIM.jpg" class="Tango2_all imgs1"  />
+<img src="img/results/all/line_preset_A1_SSIM.jpg" class="A1_all imgs1"  />
+<img src="img/results/all/line_preset_A2_SSIM.jpg" class="A2_all imgs1"  />
+<img src="img/results/all/line_preset_B_SSIM.jpg" class="B_all imgs1"  />
+<img src="img/results/all/line_preset_C_SSIM.jpg" class="C_all imgs1"  />
+<img src="img/results/all/line_preset_D_SSIM.jpg" class="D_all imgs1"  />
+<img src="img/results/all/line_preset_E_SSIM.jpg" class="E_all imgs1"  />
+<img src="img/results/all/line_preset_F_SSIM.jpg" class="F_all imgs1"  />
+<img src="img/results/all/line_preset_416x240_SSIM.jpg" class="416x240_all imgs1"  />
+<img src="img/results/all/line_preset_832x480_SSIM.jpg" class="832x480_all imgs1"  />
+<img src="img/results/all/line_preset_1280x720_SSIM.jpg" class="1280x720_all imgs1"  />
+<img src="img/results/all/line_preset_1920x1080_SSIM.jpg" class="1920x1080_all imgs1"  />
+<img src="img/results/all/line_preset_3840x2160_SSIM.jpg" class="3840x2160_all imgs1"  />
+<img src="img/results/all/line_preset_dataset VMAF.jpg" class="dataset_all imgs1"  />
+<img src="img/results/all/line_preset_ArenaOfValor_VMAF.jpg" class="ArenaOfValor_all imgs1"  />
+<img src="img/results/all/line_preset_BQMall_VMAF.jpg" class="BQMall_all imgs1"  />
+<img src="img/results/all/line_preset_BQSquare_VMAF.jpg" class="BQSquare_all imgs1"  />
+<img src="img/results/all/line_preset_BQTerrace_VMAF.jpg" class="BQTerrace_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrillText_VMAF.jpg" class="BasketballDrillText_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrill_VMAF.jpg" class="BasketballDrill_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballDrive_VMAF.jpg" class="BasketballDrive_all imgs1"  />
+<img src="img/results/all/line_preset_BasketballPass_VMAF.jpg" class="BasketballPass_all imgs1"  />
+<img src="img/results/all/line_preset_BlowingBubbles_VMAF.jpg" class="BlowingBubbles_all imgs1"  />
+<img src="img/results/all/line_preset_Cactus_VMAF.jpg" class="Cactus_all imgs1"  />
+<img src="img/results/all/line_preset_Campfire_VMAF.jpg" class="Campfire_all imgs1"  />
+<img src="img/results/all/line_preset_CatRobot_VMAF.jpg" class="CatRobot_all imgs1"  />
+<img src="img/results/all/line_preset_DaylightRoad2_VMAF.jpg" class="DaylightRoad2_all imgs1"  />
+<img src="img/results/all/line_preset_FoodMarket4_VMAF.jpg" class="FoodMarket4_all imgs1"  />
+<img src="img/results/all/line_preset_FourPeople_VMAF.jpg" class="FourPeople_all imgs1"  />
+<img src="img/results/all/line_preset_Johnny_VMAF.jpg" class="Johnny_all imgs1"  />
+<img src="img/results/all/line_preset_KristenAndSara_VMAF.jpg" class="KristenAndSara_all imgs1"  />
+<img src="img/results/all/line_preset_MarketPlace_VMAF.jpg" class="MarketPlace_all imgs1"  />
+<img src="img/results/all/line_preset_ParkRunning3_VMAF.jpg" class="ParkRunning3_all imgs1"  />
+<img src="img/results/all/line_preset_PartyScene_VMAF.jpg" class="PartyScene_all imgs1"  />
+<img src="img/results/all/line_preset_RaceHorses_VMAF.jpg" class="RaceHorses_all imgs1"  />
+<img src="img/results/all/line_preset_RaceHorses_480_VMAF.jpg" class="RaceHorses_480_all imgs1"  />
+<img src="img/results/all/line_preset_RitualDance_VMAF.jpg" class="RitualDance_all imgs1"  />
+<img src="img/results/all/line_preset_SlideEditing_VMAF.jpg" class="SlideEditing_all imgs1"  />
+<img src="img/results/all/line_preset_SlideShow_VMAF.jpg" class="SlideShow_all imgs1"  />
+<img src="img/results/all/line_preset_Tango2_VMAF.jpg" class="Tango2_all imgs1"  />
+<img src="img/results/all/line_preset_A1_VMAF.jpg" class="A1_all imgs1"  />
+<img src="img/results/all/line_preset_A2_VMAF.jpg" class="A2_all imgs1"  />
+<img src="img/results/all/line_preset_B_VMAF.jpg" class="B_all imgs1"  />
+<img src="img/results/all/line_preset_C_VMAF.jpg" class="C_all imgs1"  />
+<img src="img/results/all/line_preset_D_VMAF.jpg" class="D_all imgs1"  />
+<img src="img/results/all/line_preset_E_VMAF.jpg" class="E_all imgs1"  />
+<img src="img/results/all/line_preset_F_VMAF.jpg" class="F_all imgs1"  />
+<img src="img/results/all/line_preset_416x240_VMAF.jpg" class="416x240_all imgs1"  />
+<img src="img/results/all/line_preset_832x480_VMAF.jpg" class="832x480_all imgs1"  />
+<img src="img/results/all/line_preset_1280x720_VMAF.jpg" class="1280x720_all imgs1"  />
+<img src="img/results/all/line_preset_1920x1080_VMAF.jpg" class="1920x1080_all imgs1"  />
+<img src="img/results/all/line_preset_3840x2160_VMAF.jpg" class="3840x2160_all imgs1"  />
+<img src="img/results/all/dataset_preset_BD rate (PSNR)_relative_Energy.jpg" class="dataset_all imgs1"  />
+<img src="img/results/all/Point_preset_BQSquare_BD rate(PSNR)_relative_Energy.jpg" class="BQSquare_all imgs1"  />
+<img src="img/results/all/Point_preset_CatRobot_BD rate(PSNR)_relative_Energy.jpg" class="CatRobot_all imgs1"  />
+<img src="img/results/all/Point_preset_Tango2_BD rate(PSNR)_relative_Energy.jpg" class="Tango2_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballPass_BD rate(PSNR)_relative_Energy.jpg" class="BasketballPass_all imgs1"  />
+<img src="img/results/all/Point_preset_BlowingBubbles_BD rate(PSNR)_relative_Energy.jpg" class="BlowingBubbles_all imgs1"  />
+<img src="img/results/all/Point_preset_RaceHorses_BD rate(PSNR)_relative_Energy.jpg" class="RaceHorses_all imgs1"  />
+<img src="img/results/all/Point_preset_BQMall_BD rate(PSNR)_relative_Energy.jpg" class="BQMall_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrillText_BD rate(PSNR)_relative_Energy.jpg" class="BasketballDrillText_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrill_BD rate(PSNR)_relative_Energy.jpg" class="BasketballDrill_all imgs1"  />
+<img src="img/results/all/Point_preset_PartyScene_BD rate(PSNR)_relative_Energy.jpg" class="PartyScene_all imgs1"  />
+<img src="img/results/all/Point_preset_RaceHorses_480_BD rate(PSNR)_relative_Energy.jpg" class="RaceHorses_480_all imgs1"  />
+<img src="img/results/all/Point_preset_FourPeople_BD rate(PSNR)_relative_Energy.jpg" class="FourPeople_all imgs1"  />
+<img src="img/results/all/Point_preset_Johnny_BD rate(PSNR)_relative_Energy.jpg" class="Johnny_all imgs1"  />
+<img src="img/results/all/Point_preset_KristenAndSara_BD rate(PSNR)_relative_Energy.jpg" class="KristenAndSara_all imgs1"  />
+<img src="img/results/all/Point_preset_ArenaOfValor_BD rate(PSNR)_relative_Energy.jpg" class="ArenaOfValor_all imgs1"  />
+<img src="img/results/all/Point_preset_MarketPlace_BD rate(PSNR)_relative_Energy.jpg" class="MarketPlace_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrive_BD rate(PSNR)_relative_Energy.jpg" class="BasketballDrive_all imgs1"  />
+<img src="img/results/all/Point_preset_Cactus_BD rate(PSNR)_relative_Energy.jpg" class="Cactus_all imgs1"  />
+<img src="img/results/all/Point_preset_DaylightRoad2_BD rate(PSNR)_relative_Energy.jpg" class="DaylightRoad2_all imgs1"  />
+<img src="img/results/all/Point_preset_FoodMarket4_BD rate(PSNR)_relative_Energy.jpg" class="FoodMarket4_all imgs1"  />
+<img src="img/results/all/Point_preset_ParkRunning3_BD rate(PSNR)_relative_Energy.jpg" class="ParkRunning3_all imgs1"  />
+<img src="img/results/all/Point_preset_Campfire_BD rate(PSNR)_relative_Energy.jpg" class="Campfire_all imgs1"  />
+<img src="img/results/all/Point_preset_RitualDance_BD rate(PSNR)_relative_Energy.jpg" class="RitualDance_all imgs1"  />
+<img src="img/results/all/Point_preset_BQTerrace_BD rate(PSNR)_relative_Energy.jpg" class="BQTerrace_all imgs1"  />
+<img src="img/results/all/Point_preset_SlideEditing_BD rate(PSNR)_relative_Energy.jpg" class="SlideEditing_all imgs1"  />
+<img src="img/results/all/Point_preset_SlideShow_BD rate(PSNR)_relative_Energy.jpg" class="SlideShow_all imgs1"  />
+<img src="img/results/all/A1_preset_BD rate (PSNR)_relative_Energy.jpg" class="A1_all imgs1"  />
+<img src="img/results/all/A2_preset_BD rate (PSNR)_relative_Energy.jpg" class="A2_all imgs1"  />
+<img src="img/results/all/B_preset_BD rate (PSNR)_relative_Energy.jpg" class="B_all imgs1"  />
+<img src="img/results/all/C_preset_BD rate (PSNR)_relative_Energy.jpg" class="C_all imgs1"  />
+<img src="img/results/all/D_preset_BD rate (PSNR)_relative_Energy.jpg" class="D_all imgs1"  />
+<img src="img/results/all/E_preset_BD rate (PSNR)_relative_Energy.jpg" class="E_all imgs1"  />
+<img src="img/results/all/F_preset_BD rate (PSNR)_relative_Energy.jpg" class="F_all imgs1"  />
+<img src="img/results/all/416x240_preset_BD rate (PSNR)_relative_Energy.jpg" class="416x240_all imgs1"  />
+<img src="img/results/all/832x480_preset_BD rate (PSNR)_relative_Energy.jpg" class="832x480_all imgs1"  />
+<img src="img/results/all/1280x720_preset_BD rate (PSNR)_relative_Energy.jpg" class="1280x720_all imgs1"  />
+<img src="img/results/all/1920x1080_preset_BD rate (PSNR)_relative_Energy.jpg" class="1920x1080_all imgs1"  />
+<img src="img/results/all/3840x2160_preset_BD rate (PSNR)_relative_Energy.jpg" class="3840x2160_all imgs1"  />
+<img src="img/results/all/dataset_preset_BD rate (SSIM)_relative_Energy.jpg" class="dataset_all imgs1"  />
+<img src="img/results/all/Point_preset_BQSquare_BD rate(SSIM)_relative_Energy.jpg" class="BQSquare_all imgs1"  />
+<img src="img/results/all/Point_preset_CatRobot_BD rate(SSIM)_relative_Energy.jpg" class="CatRobot_all imgs1"  />
+<img src="img/results/all/Point_preset_Tango2_BD rate(SSIM)_relative_Energy.jpg" class="Tango2_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballPass_BD rate(SSIM)_relative_Energy.jpg" class="BasketballPass_all imgs1"  />
+<img src="img/results/all/Point_preset_BlowingBubbles_BD rate(SSIM)_relative_Energy.jpg" class="BlowingBubbles_all imgs1"  />
+<img src="img/results/all/Point_preset_RaceHorses_BD rate(SSIM)_relative_Energy.jpg" class="RaceHorses_all imgs1"  />
+<img src="img/results/all/Point_preset_BQMall_BD rate(SSIM)_relative_Energy.jpg" class="BQMall_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrillText_BD rate(SSIM)_relative_Energy.jpg" class="BasketballDrillText_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrill_BD rate(SSIM)_relative_Energy.jpg" class="BasketballDrill_all imgs1"  />
+<img src="img/results/all/Point_preset_PartyScene_BD rate(SSIM)_relative_Energy.jpg" class="PartyScene_all imgs1"  />
+<img src="img/results/all/Point_preset_RaceHorses_480_BD rate(SSIM)_relative_Energy.jpg" class="RaceHorses_480_all imgs1"  />
+<img src="img/results/all/Point_preset_FourPeople_BD rate(SSIM)_relative_Energy.jpg" class="FourPeople_all imgs1"  />
+<img src="img/results/all/Point_preset_Johnny_BD rate(SSIM)_relative_Energy.jpg" class="Johnny_all imgs1"  />
+<img src="img/results/all/Point_preset_KristenAndSara_BD rate(SSIM)_relative_Energy.jpg" class="KristenAndSara_all imgs1"  />
+<img src="img/results/all/Point_preset_ArenaOfValor_BD rate(SSIM)_relative_Energy.jpg" class="ArenaOfValor_all imgs1"  />
+<img src="img/results/all/Point_preset_MarketPlace_BD rate(SSIM)_relative_Energy.jpg" class="MarketPlace_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrive_BD rate(SSIM)_relative_Energy.jpg" class="BasketballDrive_all imgs1"  />
+<img src="img/results/all/Point_preset_Cactus_BD rate(SSIM)_relative_Energy.jpg" class="Cactus_all imgs1"  />
+<img src="img/results/all/Point_preset_DaylightRoad2_BD rate(SSIM)_relative_Energy.jpg" class="DaylightRoad2_all imgs1"  />
+<img src="img/results/all/Point_preset_FoodMarket4_BD rate(SSIM)_relative_Energy.jpg" class="FoodMarket4_all imgs1"  />
+<img src="img/results/all/Point_preset_ParkRunning3_BD rate(SSIM)_relative_Energy.jpg" class="ParkRunning3_all imgs1"  />
+<img src="img/results/all/Point_preset_Campfire_BD rate(SSIM)_relative_Energy.jpg" class="Campfire_all imgs1"  />
+<img src="img/results/all/Point_preset_RitualDance_BD rate(SSIM)_relative_Energy.jpg" class="RitualDance_all imgs1"  />
+<img src="img/results/all/Point_preset_BQTerrace_BD rate(SSIM)_relative_Energy.jpg" class="BQTerrace_all imgs1"  />
+<img src="img/results/all/Point_preset_SlideEditing_BD rate(SSIM)_relative_Energy.jpg" class="SlideEditing_all imgs1"  />
+<img src="img/results/all/Point_preset_SlideShow_BD rate(SSIM)_relative_Energy.jpg" class="SlideShow_all imgs1"  />
+<img src="img/results/all/A1_preset_BD rate (SSIM)_relative_Energy.jpg" class="A1_all imgs1"  />
+<img src="img/results/all/A2_preset_BD rate (SSIM)_relative_Energy.jpg" class="A2_all imgs1"  />
+<img src="img/results/all/B_preset_BD rate (SSIM)_relative_Energy.jpg" class="B_all imgs1"  />
+<img src="img/results/all/C_preset_BD rate (SSIM)_relative_Energy.jpg" class="C_all imgs1"  />
+<img src="img/results/all/D_preset_BD rate (SSIM)_relative_Energy.jpg" class="D_all imgs1"  />
+<img src="img/results/all/E_preset_BD rate (SSIM)_relative_Energy.jpg" class="E_all imgs1"  />
+<img src="img/results/all/F_preset_BD rate (SSIM)_relative_Energy.jpg" class="F_all imgs1"  />
+<img src="img/results/all/416x240_preset_BD rate (SSIM)_relative_Energy.jpg" class="416x240_all imgs1"  />
+<img src="img/results/all/832x480_preset_BD rate (SSIM)_relative_Energy.jpg" class="832x480_all imgs1"  />
+<img src="img/results/all/1280x720_preset_BD rate (SSIM)_relative_Energy.jpg" class="1280x720_all imgs1"  />
+<img src="img/results/all/1920x1080_preset_BD rate (SSIM)_relative_Energy.jpg" class="1920x1080_all imgs1"  />
+<img src="img/results/all/3840x2160_preset_BD rate (SSIM)_relative_Energy.jpg" class="3840x2160_all imgs1"  />
+<img src="img/results/all/dataset_preset_BD rate (VMAF)_relative_Energy.jpg" class="dataset_all imgs1"  />
+<img src="img/results/all/Point_preset_BQSquare_BD rate(VMAF)_relative_Energy.jpg" class="BQSquare_all imgs1"  />
+<img src="img/results/all/Point_preset_CatRobot_BD rate(VMAF)_relative_Energy.jpg" class="CatRobot_all imgs1"  />
+<img src="img/results/all/Point_preset_Tango2_BD rate(VMAF)_relative_Energy.jpg" class="Tango2_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballPass_BD rate(VMAF)_relative_Energy.jpg" class="BasketballPass_all imgs1"  />
+<img src="img/results/all/Point_preset_BlowingBubbles_BD rate(VMAF)_relative_Energy.jpg" class="BlowingBubbles_all imgs1"  />
+<img src="img/results/all/Point_preset_RaceHorses_BD rate(VMAF)_relative_Energy.jpg" class="RaceHorses_all imgs1"  />
+<img src="img/results/all/Point_preset_BQMall_BD rate(VMAF)_relative_Energy.jpg" class="BQMall_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrillText_BD rate(VMAF)_relative_Energy.jpg" class="BasketballDrillText_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrill_BD rate(VMAF)_relative_Energy.jpg" class="BasketballDrill_all imgs1"  />
+<img src="img/results/all/Point_preset_PartyScene_BD rate(VMAF)_relative_Energy.jpg" class="PartyScene_all imgs1"  />
+<img src="img/results/all/Point_preset_RaceHorses_480_BD rate(VMAF)_relative_Energy.jpg" class="RaceHorses_480_all imgs1"  />
+<img src="img/results/all/Point_preset_FourPeople_BD rate(VMAF)_relative_Energy.jpg" class="FourPeople_all imgs1"  />
+<img src="img/results/all/Point_preset_Johnny_BD rate(VMAF)_relative_Energy.jpg" class="Johnny_all imgs1"  />
+<img src="img/results/all/Point_preset_KristenAndSara_BD rate(VMAF)_relative_Energy.jpg" class="KristenAndSara_all imgs1"  />
+<img src="img/results/all/Point_preset_ArenaOfValor_BD rate(VMAF)_relative_Energy.jpg" class="ArenaOfValor_all imgs1"  />
+<img src="img/results/all/Point_preset_MarketPlace_BD rate(VMAF)_relative_Energy.jpg" class="MarketPlace_all imgs1"  />
+<img src="img/results/all/Point_preset_BasketballDrive_BD rate(VMAF)_relative_Energy.jpg" class="BasketballDrive_all imgs1"  />
+<img src="img/results/all/Point_preset_Cactus_BD rate(VMAF)_relative_Energy.jpg" class="Cactus_all imgs1"  />
+<img src="img/results/all/Point_preset_DaylightRoad2_BD rate(VMAF)_relative_Energy.jpg" class="DaylightRoad2_all imgs1"  />
+<img src="img/results/all/Point_preset_FoodMarket4_BD rate(VMAF)_relative_Energy.jpg" class="FoodMarket4_all imgs1"  />
+<img src="img/results/all/Point_preset_ParkRunning3_BD rate(VMAF)_relative_Energy.jpg" class="ParkRunning3_all imgs1"  />
+<img src="img/results/all/Point_preset_Campfire_BD rate(VMAF)_relative_Energy.jpg" class="Campfire_all imgs1"  />
+<img src="img/results/all/Point_preset_RitualDance_BD rate(VMAF)_relative_Energy.jpg" class="RitualDance_all imgs1"  />
+<img src="img/results/all/Point_preset_BQTerrace_BD rate(VMAF)_relative_Energy.jpg" class="BQTerrace_all imgs1"  />
+<img src="img/results/all/Point_preset_SlideEditing_BD rate(VMAF)_relative_Energy.jpg" class="SlideEditing_all imgs1"  />
+<img src="img/results/all/Point_preset_SlideShow_BD rate(VMAF)_relative_Energy.jpg" class="SlideShow_all imgs1"  />
+<img src="img/results/all/A1_preset_BD rate (VMAF)_relative_Energy.jpg" class="A1_all imgs1"  />
+<img src="img/results/all/A2_preset_BD rate (VMAF)_relative_Energy.jpg" class="A2_all imgs1"  />
+<img src="img/results/all/B_preset_BD rate (VMAF)_relative_Energy.jpg" class="B_all imgs1"  />
+<img src="img/results/all/C_preset_BD rate (VMAF)_relative_Energy.jpg" class="C_all imgs1"  />
+<img src="img/results/all/D_preset_BD rate (VMAF)_relative_Energy.jpg" class="D_all imgs1"  />
+<img src="img/results/all/E_preset_BD rate (VMAF)_relative_Energy.jpg" class="E_all imgs1"  />
+<img src="img/results/all/F_preset_BD rate (VMAF)_relative_Energy.jpg" class="F_all imgs1"  />
+<img src="img/results/all/416x240_preset_BD rate (VMAF)_relative_Energy.jpg" class="416x240_all imgs1"  />
+<img src="img/results/all/832x480_preset_BD rate (VMAF)_relative_Energy.jpg" class="832x480_all imgs1"  />
+<img src="img/results/all/1280x720_preset_BD rate (VMAF)_relative_Energy.jpg" class="1280x720_all imgs1"  />
+<img src="img/results/all/1920x1080_preset_BD rate (VMAF)_relative_Energy.jpg" class="1920x1080_all imgs1"  />
+<img src="img/results/all/3840x2160_preset_BD rate (VMAF)_relative_Energy.jpg" class="3840x2160_all imgs1"  />
+
+
+
+
 </div>
 </div>
     <!--/Portfolio Wrapper --> 
