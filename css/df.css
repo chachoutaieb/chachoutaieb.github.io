@@ -1,3 +1,4 @@
+
 .titledownload7{
 
 display: block;
@@ -88,13 +89,10 @@ padding-right: 130px;
 }
 
 
-
-
 .landClass, .absClass {
     display: none;
   
 }
-
 .cont{
   font-size: 14px;
   color: #888888;
@@ -127,8 +125,17 @@ padding-right: 130px;
 }
 .imgs {
 display: none;
-width: 390px;
-height: 370px;
+width: 416px;
+height: 388px;
+padding-left: 23px;
+padding-top: 30px;
+}
+
+.imgs1 {
+display: none;
+width: 416px;
+width: 441px;
+height: 333px;
 padding-left: 23px;
 padding-top: 30px;
 }
@@ -182,6 +189,7 @@ border: #000000 solid 1px;
 
 .imgres{
 width: 1298px;
+width: 1341px;
 margin: auto;
 
 }
@@ -192,8 +200,8 @@ margin: auto;
 
 .box {
 padding-top : 13px;
-margin: auto;
-width: 695px;
+padding-left: 164px;
+padding-right: 164px;
 padding-bottom : 30px;
 }
 
@@ -201,25 +209,39 @@ padding-bottom : 30px;
 border: 1px solid;
 width: 323px;
 height: 110px;
-padding-left: 22px;
+padding-left: 20px;
 padding-top: 10px;
 position: absolute;
 
 }
+
+
 
 .slow{
 
 border: 1px solid;
 width: 323px;
 height: 110px;
-padding-left: 22px;
+padding-left: 20px;
+padding-top: 10px;
+position: absolute;
+margin-left: 350px;
+}
+
+.all{
+
+border: 1px solid;
+width: 323px;
+height: 110px;
+padding-left: 20px;
 padding-top: 10px;
 position: relative;
-margin-left: 368px;
+margin-left: 700px;
 }
+
 .txt1{
 padding-left: 83px;
-padding-bottom: 11px;
+padding-bottom: 10px;
 font-size: 16px;
 }
 .vertical-center {
@@ -246,8 +268,8 @@ border: #000000 solid 1px;
 .txt{
 color : #000000;
 font-size: 15px;
-margin-left: 481px;
-margin-left: 184px;
+
+margin-left: 347px;
 margin-top: 42px;
 }
 
