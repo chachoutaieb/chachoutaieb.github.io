@@ -30,9 +30,9 @@
 <div class="active item">
 	<div class="backhead"> 
        </div> 
-       <div class="title"> 		 
-         Energy Consumption and Carbon Emissions of Modern <br/> Video Encoders
-       </div>
+       <div class="title"> 	
+	 Energy Consumption and Carbon Emissions of Modern <br/> Software Video Encoders
+      </div>
        
 </div>
 </section>
@@ -66,10 +66,10 @@
 
 <section id="project">
 <div class="projecttitle">
-    Energy Consumption and Carbon Emissions of Modern Video Encoders
+    Energy Consumption and Carbon Emissions of Modern Software Video Encoders
 </div>
 <div class="discription">
-In this project,  we provide a comparative study between five leading video coding standards, namely H.264/AVC, H.265/HEVC, H.266/VVC, VP9, and AV1 through their open-source and fast software encoders x264, x265, VVenC, libvpx-vp9, and SVT-AV1, respectively, in terms of quality, energy consumption and CO2 emissions. This study provides a better understanding of the trade-off between energy consumption, bitrate, and quality of different encoders and determines which is the most suitable for developing a green and sustainable video streaming solution.
+In this project,  we provide a comparative study between five leading video coding standards, namely H.264/AVC, H.265/HEVC, H.266/VVC, VP9, and AV1 through their open-source and fast software encoders x264, x265, VVenC, libvpx-vp9, and SVT-AV1, respectively, in terms of energy consumption, CO2 emissions and coding efficiency. This study provides a better understanding of the trade-off between energy consumption, bitrate, and quality of different encoders and determines which is the most suitable for developing a green and sustainable video streaming solution.
 </div>
  
 </section>
@@ -84,7 +84,7 @@ In this project,  we provide a comparative study between five leading video codi
   <div class="titlesevice">
     Evaluation System
    </div>
-   <div  class="titleseviceh6" >The evaluation of video encoding standards goes through four steps</div>
+   <div  class="titleseviceh6" >The evaluation of video coding standards goes through four steps</div>
     <div class="service_wrapper">
       <div class="row">
         <div class="col-md-3">
@@ -92,14 +92,14 @@ In this project,  we provide a comparative study between five leading video codi
           <div class="service_block">
             
             <h3 class="animated fadeInUp wow">1. Original dataset</h3>
-            <p class="animated fadeInDown wow">We selected the JVET-CTC dataset. </p>
+            <p class="animated fadeInDown wow">JVET-CTC dataset </p>
           </div>
         </div>
         <div class="col-md-3"> 
 		<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-database"></i></span> </div> 
 		<div class="service_block">
             <h3 class="animated fadeInUp wow">2. Video encoding</h3>
-            <p class="animated fadeInDown wow">We encoded the JVET-CTC datset with  with a set of target encoding parameters. </br> Codec : H.264/AVC, H.265/HEVC, H.266/VVC, VP9, and AV1 </br> Bitrate : four selected bitrates  </p>
+            <p class="animated fadeInDown wow">JVET-CTC dataset was encoded with: </br> Codec: H.264/AVC, H.265/HEVC, H.266/VVC, VP9, and AV1 </br> Bitrate: four values </br> Encoding preset: four presets  </p> 
           </div>
         </div>
         <div class="col-md-3">
@@ -107,9 +107,8 @@ In this project,  we provide a comparative study between five leading video codi
           <div class="service_block">
             
             <h3 class="animated fadeInUp wow">3. Evaluation metrics</h3>
-            <p class="animated fadeInDown wow"> We measured encoding time, energy
-consumption, CO2 emissions, CPU and memory
-usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
+            <p class="animated fadeInDown wow">Encoding time, energy consumption, CO2 emissions, CPU and memory
+usage percentage, quality using PSNR, SSIM and VMAF metrics </p>
           </div>
         </div>
 		  <div class="col-md-3">
@@ -117,7 +116,7 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
           <div class="service_block">
             
             <h3 class="animated fadeInUp wow">4. Results and analysis</h3>
-            <p class="animated fadeInDown wow"> We provide an in-depth analysis of the pros and cons of five open-source video encoders.</p>
+            <p class="animated fadeInDown wow"> In-depth analysis of the pros and cons of five open-source video encoders</p>
           </div>
         </div>
       </div> 
@@ -139,11 +138,11 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
   </div>
   
   
-   <div  class="titledownload7" > <b> Characteristics of the Used Hardware :</b>  The encoding process was performed on a highly efficient workstation type, specifically Intel(R) Xeon(R) W-2125 with an 4 Core CPU running at 4.00 GHz with four DDR4 RAM modules, each one with a size of 16 GB on Ubuntu 20.04.5 LTS operating system (OS). The processor supports a wide range of \ac{simd}, including SSE4.2, AVX, AVX2, and AVX-512. All five encoders rely heavily on assembly and intrinsic to take advantage of low-level CPU and \ac{simd} instructions (SSE, AVX, AVX-512), which help speed up the encoding process. Specifically, we used the default configuration of x264, x265, libvpx-vp9, and SVT-AV1 encoders provided with the FFmpeg library version 5.2. The proper SSE/AVX optimizations are enabled at run time according to the instructions supported by the CPU. For VVenC, we also compiled the encoder with the default configuration provided by the project Github through CMake.
+   <div  class="titledownload7" > <b> Used Hardware :</b>  The encoding process was performed on a highly efficient workstation type, specifically Intel(R) Xeon(R) W-2125 with an 4 Core CPU running at 4.00 GHz with four DDR4 RAM modules, each one with a size of 16 GB on Ubuntu 20.04.5 LTS operating system (OS). The processor supports a wide range of \ac{simd}, including SSE4.2, AVX, AVX2, and AVX-512. All five encoders rely heavily on assembly and intrinsic to take advantage of low-level CPU and \ac{simd} instructions (SSE, AVX, AVX-512), which help speed up the encoding process. Specifically, we used the default configuration of x264, x265, libvpx-vp9, and SVT-AV1 encoders provided with the FFmpeg library version 5.2. The proper SSE/AVX optimizations are enabled at run time according to the instructions supported by the CPU. For VVenC, we also compiled the encoder with the default configuration provided by the project Github through CMake.
    </div>
    
    <div  class="ht9" >
-   <b>The Python code</b> is available on GitHub, accessible <a target="_blank"  href="https://github.com/chachoutaieb/encoding_energy_co2"> here</a>. 
+   <b>Python code</b> is available on GitHub, accessible <a target="_blank"  href="https://github.com/chachoutaieb/encoding_energy_co2"> here</a>. 
    
    </div>
    
