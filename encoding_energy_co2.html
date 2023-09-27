@@ -166,30 +166,30 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics </p>
     <td>x264 <br> v0.164.3101</td>
     <td> <p3>ffmpeg -y -f rawvideo -pix_fmt {yuv420p, yuv420p10le} -s:v {W×H} -r {fps} -i input.yuv
 -c:v libx264 -pix_fmt {yuv420p, yuv420p10le} -preset {veryslow, medium, veryfast, ultrafast}
--frames:v {#frames} -crf {QP} -x264-params "keyint=32:min-keyint=32" output.mp4</p3></td>
+-frames:v {#frames} -crf {QP} -x264-params "keyint={GOP size}:min-keyint={GOP size}" output.mp4</p3></td>
   </tr>
   <tr>
     <td>H.265/HEVC</td>
     <td>x265 <br> v3.5-2</td>
     <td> <p3> ffmpeg -y -f rawvideo -pix_fmt {yuv420p, yuv420p10le} -s:v {W×H} -r {fps} -i input.yuv
 -c:v libx265 -pix_fmt {yuv420p, yuv420p10le} -preset {veryslow, medium, veryfast, ultrafast}
--frames:v {#frames} -crf {QP} -x265-params "keyint=32:min-keyint=32" output.mp4 <p3> </td>
+-frames:v {#frames} -crf {QP} -x265-params "keyint={GOP size}:min-keyint={GOP size}" output.mp4 <p3> </td>
   </tr>
   
   <tr>
     <td>VP9 </td>
     <td> libvpx-vp9 <br> v1.12.0 </td>
     <td> <p3>1) ffmpeg -y -f rawvideo -pix_fmt {yuv420p, yuv420p10le} -s:v {W×H} -r {fps} -i input.yuv -frames:v {#frames}
--c:v libvpx-vp9 -pix_fmt {yuv420p, yuv420p10le} -speed {0, 3, 6} -b:v 0 -crf {QP} -g 32 output.mp4 <br>
+-c:v libvpx-vp9 -pix_fmt {yuv420p, yuv420p10le} -speed {0, 3, 6} -b:v 0 -crf {QP} -g {GOP size} output.mp4 <br>
 2) ffmpeg -y -f rawvideo -pix_fmt {yuv420p, yuv420p10le} -s:v {W×H} -r {fps} -i input.yuv -speed 8 -frames:v {#frames}
--c:v libvpx-vp9 -pix_fmt {yuv420p, yuv420p10le} -quality realtime -b:v 0 -crf {QP} -g 32 output.mp4 <p3></td>
+-c:v libvpx-vp9 -pix_fmt {yuv420p, yuv420p10le} -quality realtime -b:v 0 -crf {QP} -g {GOP size} output.mp4 <p3></td>
   </tr>
   
   <tr>
     <td>AV1 </td>
     <td>SVT-AV1 <br> v1.7.0 </td>
     <td> <p3>ffmpeg -y -f rawvideo -pix_fmt {yuv420p, yuv420p10le} -s:v {W×H} -r {fps} -i input.yuv -frames:v {#frames}
--c:v libsvtav1 -pix_fmt {yuv420p, yuv420p10le} -preset {3, 6, 10, 12} -crf {QP} -g {32} output.mp4 <p3></td>
+-c:v libsvtav1 -pix_fmt {yuv420p, yuv420p10le} -preset {3, 6, 10, 12} -crf {QP} -g {GOP size} output.mp4 <p3></td>
   </tr>
   
   <tr>
