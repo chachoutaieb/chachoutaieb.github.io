@@ -83,6 +83,8 @@ font-family: 'arial', sans-serif;
 font-weight: normal;
 text-align: center;
 text-transform: 'full-size-kana';
+width: 1366px;
+  margin: auto;
 
 }
 .discription{
@@ -96,7 +98,9 @@ font-size: 19px;
 font-family: 'Lato', sans-serif;
 font-weight: normal;
 text-align: center;
-text-transform: 'full-size-kana';}
+text-transform: 'full-size-kana';
+width: 1366px;
+  margin: auto;}
 
 a, a:hover, a:active {
     outline: 0px !important;
