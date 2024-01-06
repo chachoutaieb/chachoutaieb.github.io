@@ -88,6 +88,7 @@ padding-left: 250px;
 padding-right: 210px;
 width: 1366px;
 margin: auto;
+
 }
 .titledownload13{
 
@@ -198,12 +199,12 @@ margin: auto;
   font-weight: 398;
   text-align: center;
   margin: 0px 0 25px 146px;
-  width: 1110px;
+  width: 1366px;
 }
 
 
 .container {
-  width: 1365px;
+  width: 1366px;
 }
 .col-md-3 {
   width: 339px;
@@ -286,8 +287,7 @@ border: #000000 solid 1px;
 
 
 .imgres{
-width: 1298px;
-width: 1341px;
+width: 1366px;
 margin: auto;
 
 }
