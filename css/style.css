@@ -719,7 +719,7 @@ padding-top: 73px;
 #service {
     position: relative;
     padding: 60px 0px;
-    background: url('../img/system1.jpg') top left no-repeat !important;
+    background: url('../img/system1.jpg') top left !important;
 }
 #service h2{
   color: #fff;
